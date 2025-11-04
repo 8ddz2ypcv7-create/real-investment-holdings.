@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Real Investment Holdings LLC</title>
+<style>
+  :root {
+    --red:#c70000;
+    --black:#111;
+    --gray:#f4f4f4;
+    --white:#fff;
+  }
+  body {margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--black);background:var(--gray);}
+  header {background:var(--black);color:var(--white);padding:16px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;}
+  header h1{margin:0;font-size:22px;color:var(--red);}
+  nav a{color:var(--white);text-decoration:none;margin:0 10px;font-weight:600;}
+  nav a:hover{color:var(--red);}
+  .hero{background:linear-gradient(120deg,var(--black),#222);color:var(--white);text-align:center;padding:80px 20px;}
+  .hero h2{margin:0 0 12px;font-size:32px;color:var(--red);}
+  .hero p{max-width:640px;margin:0 auto;font-size:18px;line-height:1.6;}
+  section{max-width:960px;margin:60px auto;padding:0 22px;}
+  h3{color:var(--red);}
+  .services{display:flex;gap:18px;flex-wrap:wrap;}
+  .card{background:var(--white);border-radius:8px;flex:1 1 260px;box-shadow:0 2px 6px rgba(0,0,0,.1);padding:18px;}
+  .card h4{margin-top:0;color:var(--black);}
+  footer{background:var(--black);color:var(--white);text-align:center;padding:24px 16px;}
+  .contact-btns{margin-top:18px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;}
+  .btn{background:var(--red);color:var(--white);padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:600;}
+  .btn:hover{background:#a00000;}
+  @media(max-width:640px){header{flex-direction:column;align-items:flex-start;}nav{margin-top:8px;}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Real Investment Holdings LLC</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Your Trusted Partner in Global Investments</h2>
+  <p>Real Investment Holdings LLC focuses on transparent, ethical, and results-driven investment solutions across emerging and established markets.</p>
+</div>
+
+<section id="about">
+  <h3>About Us</h3>
+  <p>Real Investment Holdings LLC is a privately managed investment consultancy dedicated to sustainable portfolio growth. 
+  We prioritize long-term partnerships, rigorous market analysis, and client-first strategies that ensure stability and scalability in dynamic financial environments.</p>
+</section>
+
+<section id="services">
+  <h3>Our Services</h3>
+  <div class="services">
+    <div class="card">
+      <h4>Asset Management</h4>
+      <p>Customized investment portfolios aligned with risk tolerance and growth objectives.</p>
+    </div>
+    <div class="card">
+      <h4>Strategic Consulting</h4>
+      <p>Advisory support for corporate expansion, funding, and diversification strategies.</p>
+    </div>
+    <div class="card">
+      <h4>Market Research & Analytics</h4>
+      <p>Data-driven insights to guide informed decision-making across international sectors.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h3>Contact Us</h3>
+  <p style="max-width:600px;">Connect with our team for inquiries, consultations, or partnership opportunities. We’re available across secure communication channels.</p>
+  <div class="contact-btns">
+    <a class="btn" href="tel:+12088100271">Call +1 (208) 810-0271</a>
+    <a class="btn" href="https://wa.me/17208403294?text=Hello%20Real%20Investment%20Holdings%20LLC" target="_blank" rel="noopener">WhatsApp +1 (720) 840-3294</a>
+    <a class="btn" href="https://signal.me/#p/+12088100271" target="_blank" rel="noopener">Signal Chat</a>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> Real Investment Holdings LLC • All Rights Reserved</p>
+  <p style="font-size:13px;color:#ccc;">This site is for informational purposes only and does not constitute financial advice.</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
